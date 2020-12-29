@@ -25,7 +25,8 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
-    width: 400,
+    width: "80%",
+    maxWidth: "700px",
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
@@ -247,7 +248,7 @@ function App() {
       {user?.displayName ? (
       <ImageUpload username={user.displayName}/>
       ) : (
-      <h3>Sorry you need to login to upload</h3>
+      <h3 className="app__uploadMsg">Sorry you need to login to upload :(</h3>
       )}      
 
     </div>

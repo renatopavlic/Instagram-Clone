@@ -56,8 +56,8 @@
   flex: 0;
   border: none;
   border-top: 1px solid lightgray;
-  background-color: transparent;
   color: #6082a3;
+  padding: 0 10px;
 }
 
 .post__paragraph {
