@@ -88,8 +88,8 @@ function App() {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         // user has logged in...
-        console.log("user is: ", authUser);
         setUser(authUser);
+        console.log("user is: ", user);
 
       } else {
         // user has signed out...
@@ -160,7 +160,7 @@ function App() {
             onChange={ e => setPassword(e.target.value)} 
             />
 
-            <Button onClick={() => setOpen(true)}>Sing Up</Button>
+            <Button onClick={signUp}>Sign Up</Button>
 
           </form>
 
@@ -221,7 +221,7 @@ function App() {
             ) : (
               <div className="app__loginContainer">
                 <Button type="submit" onClick={() => setOpenSignIn(true)}>Sign In</Button>
-                <Button type="submit" onClick={signUp}>Sign Up</Button>
+                <Button type="submit" onClick={() => setOpen(true)}>Sign Up</Button>
               </div>
             )}
 
