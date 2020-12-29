@@ -7,6 +7,9 @@
 }
 
 .app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   object-fit: contain;
   padding: 20px;
@@ -22,4 +25,8 @@
 .app__signup {
   display: flex;
   flex-direction: column;
+}
+
+.app__posts {
+  padding: 20px;
 }
